@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +11,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getDatabase, ref, set, get, onValue, update } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
 
-// ─── PASTE YOUR FIREBASE CONFIG HERE ───────────────────────────────────────
 const firebaseConfig = {
   apiKey: "AIzaSyBZ8GA_4wtA6AHpb1SxtLyZAiRMwGxrsWQ",
   authDomain: "connect-four-41d0a.firebaseapp.com",
@@ -20,7 +20,6 @@ const firebaseConfig = {
   messagingSenderId: "296890020551",
   appId: "1:296890020551:web:91b95d0c7732874cee84e2"
 };
-// ───────────────────────────────────────────────────────────────────────────
 
 // ── Question Bank ──────────────────────────────────────────────────────────
 const QUESTIONS = {
@@ -92,7 +91,7 @@ let activeCategory = 'anxiety';
 let rollingAnimation = null;
 
 window.addEventListener('DOMContentLoaded', () => {
-  if (firebaseConfig.apiKey === "PASTE_YOUR_API_KEY") {
+  if (false) {
     showScreen('config-error');
     return;
   }
